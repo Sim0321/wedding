@@ -90,7 +90,7 @@ function ContactInfo({ name, account, phoneNumber }: Person) {
             <button className={cx('button')}>복사</button>
           </CopyToClipboard>
         </li>
-        {account.kakaopayLink !== null ? (
+        {account.kakaopayLink != null ? (
           <li>
             <a
               href={account.kakaopayLink}
