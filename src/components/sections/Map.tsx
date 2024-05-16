@@ -49,6 +49,14 @@ const Map = ({ location }: { location: Location }) => {
     <Section>
       <div className={cx('wrap-map')}>
         <div className={cx('map')} ref={mapContainer}></div>
+        <a
+          className={cx('btn-find-way')}
+          href={location.link}
+          target="_blank"
+          rel="noreferrer"
+        >
+          길찾기
+        </a>
       </div>
     </Section>
   )
