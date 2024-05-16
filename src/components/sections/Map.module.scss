@@ -1,3 +1,17 @@
+.wrap-header {
+  display: flex;
+  flex-direction: column;
+
+  .txt-title {
+    margin-bottom: 16px;
+  }
+
+  .txt-subtitle {
+    font-weight: 400;
+    font-size: 15px;
+  }
+}
+
 .wrap-map {
   position: relative;
   .map {
