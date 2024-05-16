@@ -1,0 +1,17 @@
+/* 현재 사용하고 있는 스타일링 방식은 classNames를 bind해서 하는데 이러한 방식은 지역스코프를 가진다. 그렇게되면 cx('클래스명')으로 관리되고 있는 스타일이랑 외부라이브러리에서 관리하는 스타일이랑 스코프가 달라서 같은 class라는 것을 인식하지 못함. 그러므로 외부 라이브러리를 따로 오버라이드 하려면 따로 만들어야한다 */
+
+.swiper,
+.swiper-wrapper {
+  height: 100% !important;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
