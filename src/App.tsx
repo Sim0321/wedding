@@ -14,7 +14,8 @@ import Intro from '@components/sections/Intro'
 import Invitation from '@components/sections/Invitation'
 import Calendar from '@components/sections/Calendar'
 import Map from '@components/sections/Map'
-import Contact from './components/sections/Contact'
+import Contact from '@components/sections/Contact'
+import Share from '@components/sections/Share'
 
 const cx = classNames.bind(styles)
 
@@ -80,7 +81,8 @@ function App() {
       <Calendar date={date} />
       <Map location={location} />
       <Contact groom={groom} bride={bride} />
-      {JSON.stringify(wedding)}
+      <Share groomName={groom.name} brideName={bride.name} date={date} />
+      {/* {JSON.stringify(wedding)} */}
     </div>
   )
 }
